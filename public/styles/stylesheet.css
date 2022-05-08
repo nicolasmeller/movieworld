@@ -1,0 +1,247 @@
+body {
+    background-color: #0b1422;
+}
+
+footer {
+    background: #1d3354 !important;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,
+            #467599,
+            #1d3354) !important;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,
+            #467599,
+            #1d3354) !important;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-bottom: -5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+footer p {
+    color: #e9fff9;
+}
+
+footer a {
+    color: e9fff9;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: e9fff9;
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    color: #e9fff9 !important;
+}
+
+.nav-link {
+    color: #e9fff9 !important;
+    font-size: large;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.dropdown-item {
+    color: #1d3354 !important;
+}
+
+.bg-light {
+    background: #1d3354 !important;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,
+            #467599,
+            #1d3354) !important;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,
+            #467599,
+            #1d3354) !important;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,225,225, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.dropdown-item:active {
+    background-color: #9ed8db;
+}
+
+.carousel-item {
+    max-height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item>img {
+    object-fit: cover;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+.carousel {
+    background: #000046;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.carousel-item h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 46px;
+
+    color: #e9fff9 !important;
+}
+
+.carousel-item h3 {
+    position: relative;
+    z-index: 2;
+    font-size: 28px;
+    font-weight: lighter;
+
+    color: #e9fff9 !important;
+}
+
+.content-container {
+    min-height: 90%;
+}
+
+.carousel-text {
+    position: absolute;
+    padding: 15px 20px;
+    width: 40%;
+    border-radius: 20px;
+    margin-left: 15%;
+    top: 180px;
+
+}
+
+.movie-item img {
+    max-width: 200px;
+    height: auto;
+    opacity: 0.35;
+    border-radius: 15px;
+    transition: ease-in-out 200ms;
+}
+
+.movie-item:hover img {
+    max-width: 200px;
+    height: auto;
+    opacity: 0.8;
+    border-radius: 15px;
+}
+
+.page h1 {
+
+    color: #e9fff9;
+}
+
+.page {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.trending-movies h1 {
+    padding: 20px;
+}
+
+.movie-list p {
+    position: absolute;
+    font-weight: bold;
+    font-size: larger;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 140px;
+}
+
+.movie-list a {
+    color: #e9fff9;
+}
+
+.movie-list {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.movie-info {
+    color: #e9fff9;
+    padding: 15px;
+    background-image: linear-gradient(135deg, rgba(29, 65, 92, 0.59) 10%, rgba(22, 39, 64, 0.48) 100%);
+    border-radius: 15px;
+}
+
+.movie-info img {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+
+}
+
+    .movie-info-img {
+        width: 100%;
+    height: 500px;
+
+}
+
+.item img{
+    max-height: 300px;
+    width: auto;
+}
+.scroll-h{
+    overflow: auto;
+    white-space: nowrap;
+}
+div.scrollmenu a {
+
+    padding: 14px;
+  }
+.scroll-h img{
+    width: 200px;
+    height: auto;
+    margin:15px
+}
+.scroll-h a:hover {
+     color: rgba(0, 0, 0, 0)!important
+}
+
+
+.similar h2{
+     margin-top: 20px;
+     color: #e9fff9;
+
+}
+.container h2{
+        color: #e9fff9!important;
+    
+}
+ ::-webkit-scrollbar{
+    width: 15px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track{
+    background: #c5e6ff; 
+
+  }
+   
+  /* Handle */
+::-webkit-scrollbar-thumb{
+    background: #325570; 
+  
+   
+  }
