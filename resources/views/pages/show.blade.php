@@ -20,26 +20,33 @@
             </div>
         </div>
     </div>
-    <div class="similar">
-         <h2>Similar</h2>
-       
-
-
-         <div class="scroll-h">
-    
-            @foreach ($similar as $item)
-
-
-
-            <a href="show={{$item['id']}}">
-            <img src="https://image.tmdb.org/t/p/w500/{{$item['poster_path']}}" alt="">
-            </a>
-    
-                            
-            @endforeach
-        </div>
-
 </div>
+
+
+         <section class="product">
+            <h2 class="product-category">Similar movies</h2>
+            <button class="pre-btn"><img src="" alt=""><</button>
+            <button class="nxt-btn"><img src="" alt="">></button>
+            <div class="product-container">
+                @foreach ($similar as $item)
+                <div class="product-card">
+                    <a href="show={{$item['id']}}">
+                    <div class="product-image">
+                        <img src="https://image.tmdb.org/t/p/w500/{{$item['poster_path']}}" class="product-thumb" alt="">
+                    </div>
+                </a>               
+                    <div class="product-info">
+                      
+                    </div>
+                </div>
+     
+              
+               @endforeach
+          
+            </div>
+        </section>
+
+
 
 
 

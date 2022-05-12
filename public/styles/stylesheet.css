@@ -143,7 +143,7 @@ footer a:hover {
 }
 
 .page h1 {
-
+  text-transform: capitalize;
     color: #e9fff9;
 }
 
@@ -225,7 +225,7 @@ div.scrollmenu a {
      color: #e9fff9;
 
 }
-.container h2{
+ h2{
         color: #e9fff9!important;
     
 }
@@ -246,11 +246,11 @@ div.scrollmenu a {
    
   }
 
-
+/* re-use from old project, have to refactor */
   .product {
     position: relative;
     overflow: hidden;
-    padding: 20px;
+ 
   }
   
   .product-category {
@@ -262,7 +262,7 @@ div.scrollmenu a {
   }
   
   .product-container {
-    padding: 0 10vw;
+    padding: 0 10vw 0 8vw;
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -281,7 +281,7 @@ div.scrollmenu a {
   
   .product-image {
     position: relative;
-    width: 100%;
+    width: auto;
     height: 350px;
     overflow: hidden;
   }
@@ -291,43 +291,15 @@ div.scrollmenu a {
     height: 100%;
     object-fit: cover;
   }
+ 
   
-  .discount-tag {
-    position: absolute;
-    background: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    color: #ff7d7d;
-    right: 10px;
-    top: 10px;
-    text-transform: capitalize;
-  }
   
-  .card-btn {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    width: 90%;
-    text-transform: capitalize;
-    border: none;
-    outline: none;
-    background: #fff;
-    border-radius: 5px;
-    transition: 0.5s;
-    cursor: pointer;
-    opacity: 0;
-  }
   
   .product-card:hover .card-btn {
     opacity: 1;
   }
   
-  .card-btn:hover {
-    background: #ff7d7d;
-    color: #fff;
-  }
+
   
   .product-info {
     width: 100%;
@@ -363,21 +335,22 @@ div.scrollmenu a {
   .pre-btn,
   .nxt-btn {
     border: none;
-    width: 10vw;
-    height: 100%;
+    width:  100px;
+    height: 150px;
     position: absolute;
-    top: 0;
+    top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    background: rgba(168, 168, 168, 0.5);
     cursor: pointer;
     z-index: 8;
+    font-weight: bolder;
   }
   
   .pre-btn {
     left: 0;
-    transform: rotate(180deg);
+
   }
   
   .nxt-btn {
