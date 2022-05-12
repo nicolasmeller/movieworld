@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Facade;
 
 return [
 
+    'movieapi' => env('MOVIEKEY'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
