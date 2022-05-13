@@ -26,8 +26,8 @@ Route::get('/show={id}', [MovieController::class,'show']);
 
 
 Route::get('/HotMovies={page}', [MovieController::class,'IndexHot']);
-Route::get('/UpComing', [MovieController::class,'IndexUpComing']);
-Route::get('/toprated', [MovieController::class,'IndexTopRated']);
+Route::get('/UpComing={page}', [MovieController::class,'IndexUpComing']);
+Route::get('/toprated={page}', [MovieController::class,'IndexTopRated']);
 Route::get('/genre ', function () {
     return view('pages.genre');
 });

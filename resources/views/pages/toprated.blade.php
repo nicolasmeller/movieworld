@@ -17,5 +17,27 @@
         </a>
         @endforeach
     </div>
+    <center>
+        <div class="row">
+            <div class="col">
+                <a href="/toprated=<?php $pagezerochecker = (int)$pagenumber-1;if($pagezerochecker < 1){echo $pagenumber = 1;}else{echo (int)$pagenumber-1;}?>" rel="noopener noreferrer">
+                    <div class="pagination-button">
+                        <p>Back</p>
+                    </div>
+                </a>
+            </div>
+                <div class="col">
+                <a href="/toprated=<?php echo (int)$pagenumber+1; ?>" rel="noopener noreferrer">
+                    <div class="pagination-button">
+                        <p>Next</p>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div>
+    </center>
+
+
+
     </div>
     @stop

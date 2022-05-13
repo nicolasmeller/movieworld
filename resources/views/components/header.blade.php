@@ -11,13 +11,13 @@
         <ul class="navbar-nav mr-auto">
        
             <li class="nav-item">
-              <a class="nav-link" href="/UpComing">Up Coming</a>
+              <a class="nav-link" href="/UpComing=1">Up Coming</a>
           </li>
             <li class="nav-item">
                 <a class="nav-link" href="/HotMovies=1">Trending</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/toprated">Top Rated</a>
+              <a class="nav-link" href="/toprated=1">Top Rated</a>
           </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle disabled" href="/genre" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >

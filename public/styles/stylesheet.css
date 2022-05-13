@@ -399,5 +399,20 @@ div.scrollmenu a {
   .nxt-btn:hover img {
     opacity: 1;
   }
+  .pagination-button{
+    background-color: #a7d0efb6;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+ }
+ .pagination-button p{
+   color:#000046;
+   position: relative;
+   top: 12.5px;
+ 
+ }
+   
+ 
+ 
   
 

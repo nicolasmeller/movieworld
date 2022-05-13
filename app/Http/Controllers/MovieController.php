@@ -12,23 +12,29 @@ class MovieController extends Controller
   
     public function IndexHot($page)
     {
-        $key = config('app.movieapi');
-        $href = config('app.movieapihref');
-        $collection = Http::get("$href/popular?api_key=$key&language=en-US&page=$page") -> json();
-        return view("pages.HotMovies", ['collection' => $collection['results']], ['pagenumber' => $page]);
+    
+            $key = config('app.movieapi');
+            $href = config('app.movieapihref');
+            $collection = Http::get("$href/popular?api_key=$key&language=en-US&page=$page") -> json();
+            return view("pages.HotMovies", ['collection' => $collection['results']], ['pagenumber' => $page]);
     }
-    public function IndexUpComing()
-    {
+
+
+    public function IndexUpComing($page)
+    {   
+        if($page <= 0){
+             $page = 1;
+        }
         $key = config('app.movieapi');
         $href = config('app.movieapihref');
-        $collection = Http::get("$href/upcoming?api_key=$key&language=en-US&page=1") -> json();
-        return view("pages.UpComing", ['collection' => $collection['results']]);
+        $collection = Http::get("$href/upcoming?api_key=$key&language=en-US&page=$page") -> json();
+        return view("pages.UpComing", ['collection' => $collection['results']], ['pagenumber' => $page]);
     }
-    public function IndexTopRated(){
+    public function IndexTopRated($page){
         $key = config('app.movieapi');
         $href = config('app.movieapihref');
-        $collection = Http::get("$href/top_rated?api_key=$key&language=en-US&page=1")-> json();
-        return view("pages.toprated", ['collection' => $collection['results']]);
+        $collection = Http::get("$href/top_rated?api_key=$key&language=en-US&page=$page")-> json();
+        return view("pages.toprated", ['collection' => $collection['results']], ['pagenumber' => $page]);
     }
     public function show($id){
         $key = config('app.movieapi');
