@@ -14,14 +14,14 @@ class MovieController extends Controller
     {
         $key = config('app.movieapi');
         $href = config('app.movieapihref');
-        $collection = Http::get("$href/popular?api_key=$key&language=en-US&page=1%22") -> json();
+        $collection = Http::get("$href/popular?api_key=$key&language=en-US&page=1") -> json();
         return view("pages.HotMovies", ['collection' => $collection['results']]);
     }
     public function IndexUpComing()
     {
         $key = config('app.movieapi');
         $href = config('app.movieapihref');
-        $collection = Http::get("$href/upcoming?api_key=21f9ad3cc0b8830d984a057a3fc05fb8&language=en-US&page=1%22") -> json();
+        $collection = Http::get("$href/upcoming?api_key=21f9ad3cc0b8830d984a057a3fc05fb8&language=en-US&page=1") -> json();
         return view("pages.UpComing", ['collection' => $collection['results']]);
     }
     public function IndexTopRated(){

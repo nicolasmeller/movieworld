@@ -175,6 +175,7 @@ footer a:hover {
 .movie-list {
     padding-top: 20px;
     padding-bottom: 20px;
+    justify-content: center;
 
 }
 .movie-info {
@@ -254,7 +255,7 @@ div.scrollmenu a {
   }
   
   .product-category {
-    padding: 0 10vw;
+    padding: 0 5vw;
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 40px;
@@ -262,10 +263,37 @@ div.scrollmenu a {
   }
   
   .product-container {
-    padding: 0 10vw 0 8vw;
+    padding: 0 8vw 0 15vw;
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
+  } 
+
+
+  @media only screen and (min-width: 350px) {
+    .product-container {
+      padding: 0 8vw 0 16vw;
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    } 
+  }
+  @media only screen and (min-width: 610px) {
+    .product-container {
+      padding: 0 8vw 0 17vw;
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    } 
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .product-container {
+      padding: 0 8vw 0 10vw;
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    } 
   }
   
   .product-container::-webkit-scrollbar {
@@ -335,17 +363,21 @@ div.scrollmenu a {
   .pre-btn,
   .nxt-btn {
     border: none;
-    width:  100px;
-    height: 150px;
+    width:  70px;
+    height: 70px;
     position: absolute;
-    top: 200px;
+    top: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(168, 168, 168, 0.5);
     cursor: pointer;
+    border-radius: 50px;
     z-index: 8;
+    background: rgba(168, 168, 168, 0.5);
+    color: black;
     font-weight: bolder;
+    font-size: 20px;
+    margin: 0 10px 0 10px;
   }
   
   .pre-btn {
@@ -367,35 +399,4 @@ div.scrollmenu a {
     opacity: 1;
   }
   
-  .collection-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-  }
-  
-  .collection {
-    position: relative;
-  }
-  
-  .collection img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .collection p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-    text-transform: capitalize;
-  }
-  
-  .collection:nth-child(3) {
-    grid-column: span 2;
-    margin-bottom: 10px;
-  }
+
