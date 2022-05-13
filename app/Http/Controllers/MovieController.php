@@ -10,12 +10,12 @@ use Illuminate\Support\Facades\Http;
 class MovieController extends Controller
 {
   
-    public function IndexHot()
+    public function IndexHot($page)
     {
         $key = config('app.movieapi');
         $href = config('app.movieapihref');
-        $collection = Http::get("$href/popular?api_key=$key&language=en-US&page=1") -> json();
-        return view("pages.HotMovies", ['collection' => $collection['results']]);
+        $collection = Http::get("$href/popular?api_key=$key&language=en-US&page=$page") -> json();
+        return view("pages.HotMovies", ['collection' => $collection['results']], ['pagenumber' => $page]);
     }
     public function IndexUpComing()
     {

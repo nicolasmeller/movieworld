@@ -25,7 +25,7 @@ Route::get('/about', function () {
 Route::get('/show={id}', [MovieController::class,'show']);
 
 
-Route::get('/HotMovies', [MovieController::class,'IndexHot']);
+Route::get('/HotMovies={page}', [MovieController::class,'IndexHot']);
 Route::get('/UpComing', [MovieController::class,'IndexUpComing']);
 Route::get('/toprated', [MovieController::class,'IndexTopRated']);
 Route::get('/genre ', function () {

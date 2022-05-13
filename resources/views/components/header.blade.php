@@ -14,7 +14,7 @@
               <a class="nav-link" href="/UpComing">Up Coming</a>
           </li>
             <li class="nav-item">
-                <a class="nav-link" href="/HotMovies">Trending</a>
+                <a class="nav-link" href="/HotMovies=1">Trending</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/toprated">Top Rated</a>
