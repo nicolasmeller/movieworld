@@ -5,11 +5,11 @@
 
 @section('content')
 <div class="container page"> 
-    <h1>Up coming</h1>
+    <h1>Up coming movies</h1>
     <div class="d-flex align-content-start flex-wrap movie-list">
         @foreach ($collection as $item)
         <a href="show={{$item['id']}}">
-            <div class="p-2 movie-item">
+            <div class="movie-item">
                 <p>
                     {{$item['original_title']}}
                 </p>
@@ -22,17 +22,17 @@
 <center>
     <div class="row">
         <div class="col">
-            <a href="/UpComing=<?php $pagezerochecker = (int)$pagenumber-1;if($pagezerochecker < 1){echo $pagenumber = 1;}else{echo (int)$pagenumber-1;}?>" rel="noopener noreferrer">
-                <div class="pagination-button">
-                    <p>Back</p>
-                </div>
+            <a class="pagination-button" href="/UpComing=<?php $pagezerochecker = (int)$pagenumber-1;if($pagezerochecker < 1){echo $pagenumber = 1;}else{echo (int)$pagenumber-1;}?>" rel="noopener noreferrer">
+              
+                  Back
+              
             </a>
         </div>
             <div class="col">
-            <a href="/UpComing=<?php echo (int)$pagenumber+1; ?>" rel="noopener noreferrer">
-                <div class="pagination-button">
-                    <p>Next</p>
-                </div>
+            <a class="pagination-button" href="/UpComing=<?php echo (int)$pagenumber+1; ?>" rel="noopener noreferrer">
+              
+                  Next
+          
             </a>
         </div>
         </div>

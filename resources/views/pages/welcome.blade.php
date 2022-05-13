@@ -20,9 +20,6 @@
                         <img src="https://image.tmdb.org/t/p/w500/{{$item['poster_path']}}" class="product-thumb" alt="">
                     </div>
                 </a>               
-                    <div class="product-info">
-                      
-                    </div>
                 </div>
      
               
@@ -36,13 +33,10 @@
             <button class="nxt-btn"><img src="" alt="">></button>
             <div class="product-container">
                 @foreach ($upcomingmovies as $item)
-                <a href="show={{$item['id']}}">
                 <div class="product-card">
+                <a href="show={{$item['id']}}">
                     <div class="product-image">
                         <img src="https://image.tmdb.org/t/p/w500/{{$item['poster_path']}}" class="product-thumb" alt="">
-                    </div>
-                    <div class="product-info">
-                      
                     </div>
                 </div>
      

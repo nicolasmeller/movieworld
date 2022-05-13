@@ -35,9 +35,6 @@
                         <img src="https://image.tmdb.org/t/p/w500/{{$item['poster_path']}}" class="product-thumb" alt="">
                     </div>
                 </a>               
-                    <div class="product-info">
-                      
-                    </div>
                 </div>
      
               

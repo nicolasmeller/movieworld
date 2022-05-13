@@ -4,11 +4,11 @@
 
 @section('content')
 <div class="container page"> 
-    <h1>Top Rated</h1>
+    <h1>Top Rated Movies</h1>
     <div class="d-flex align-content-start flex-wrap movie-list">
         @foreach ($collection as $item)
         <a href="show={{$item['id']}}">
-            <div class="p-2 movie-item">
+            <div class="movie-item">
                 <p>
                     {{$item['original_title']}}
                 </p>
