@@ -127,10 +127,10 @@ footer a:hover {
 
 }
 .movie-item {
-  width: 200px;
+  width: 190px;
   max-height: 300px;
   overflow: hidden;
-  margin: 5px;
+  margin: 10px;
   transition: ease-in-out 200ms;
 }
 .movie-item img {
