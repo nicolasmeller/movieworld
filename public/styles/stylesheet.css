@@ -285,18 +285,22 @@ div.scrollmenu a {
 
   @media only screen and (min-width: 350px) {
     .product-container {
-      padding: 0 8vw 0 10vw;
+      padding: 0 8vw 0 15vw;
       display: flex;
-      overflow-x: auto;
       scroll-behavior: smooth;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      overscroll-behavior-x: contain;
     } 
   }
   @media only screen and (min-width: 610px) {
     .product-container {
-      padding: 0 8vw 0 17vw;
+      padding: 0 8vw 0 15vw;
       display: flex;
-      overflow-x: auto;
       scroll-behavior: smooth;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      overscroll-behavior-x: contain;
     } 
   }
 
@@ -304,13 +308,16 @@ div.scrollmenu a {
     .product-container {
       padding: 0 8vw 0 8vw;
       display: flex;
-      overflow-x: auto;
       scroll-behavior: smooth;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      overscroll-behavior-x: contain;
     } 
   }
   
   .product-container::-webkit-scrollbar {
     display: none;
+    
   }
   
   .product-card {
